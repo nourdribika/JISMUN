@@ -86,5 +86,18 @@
     <footer>
         <p>&copy; 2025 JISMUN. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript for Smooth Scroll -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
