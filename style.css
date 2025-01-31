@@ -55,12 +55,12 @@ a {
 /* Logo */
 .logo img {
     width: 120px;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Hero Section */
 .hero {
-    background-image: url('https://i.imgur.com/PQ6PmSN.jpg'); /* Direct Image URL */
+    background-image: url('https://chat.openai.com/static/aljazari_school_image.jpeg'); /* Blurred background image */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -124,9 +124,9 @@ h3 {
 .apply-button {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 10px;
-    margin: 10px 0;
-    text-align: center;
+    margin-bottom: 10px;
     border-radius: 5px;
+    text-align: center;
     color: white;
     transition: background-color 0.3s ease;
 }
