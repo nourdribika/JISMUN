@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,9 +11,6 @@
 <body>
     <header>
         <div class="navbar">
-            <div class="logo">
-                <img src="https://i.imgur.com/PQ6PmSN.jpg" alt="JISMUN Logo"> <!-- Logo image URL -->
-            </div>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#schedule">Schedule</a></li>
@@ -24,14 +22,14 @@
         <div class="hero">
             <div class="hero-text">
                 <h1>Welcome to JISMUN'25</h1>
-                <div id="timer"></div> <!-- Countdown Timer will appear here -->
+                <div id="timer"></div>
             </div>
         </div>
     </header>
     <main>
         <section id="about">
             <h2>About</h2>
-            <p>Welcome to JISMUN'25! Join us for an exceptional Model United Nations experience where you will engage with global issues, foster diplomacy, and develop leadership skills.</p>
+            <p>Welcome to JISMUN'25, an exciting opportunity to be part of a global simulation where students step into the shoes of diplomats and take on international issues. Through the Model United Nations (MUN) experience, delegates will hone their skills in negotiation, public speaking, diplomacy, and critical thinking, which are invaluable for both academic and personal growth. Whether you're an experienced MUN participant or a first-timer, JISMUN'25 promises to offer an unforgettable learning experience. We bring together like-minded students who share a passion for global issues, diplomacy, and making a meaningful impact on the world. This event is set to feature a range of committees covering a variety of contemporary global challenges, alongside workshops to further develop the delegates' understanding of the United Nations and its workings.</p>
         </section>
         <section id="schedule">
             <h2>Schedule</h2>
@@ -41,31 +39,31 @@
             <h2>Committees</h2>
             <div class="committee">
                 <h3>JCC</h3>
-                <p>Description of the JCC Committee.</p>
+                <p>The Joint Crisis Committee (JCC) is a fast-paced, dynamic committee where delegates face ongoing crises that require immediate attention and action. This committee tests your problem-solving skills, teamwork, and ability to think quickly under pressure. The JCC will challenge delegates to respond to evolving situations with innovative solutions, all while maintaining diplomacy.</p>
             </div>
             <div class="committee">
                 <h3>UNWOMEN</h3>
-                <p>Description of the UNWOMEN Committee.</p>
+                <p>The United Nations Entity for Gender Equality and the Empowerment of Women (UNWOMEN) is a vital committee that works to advance gender equality across the globe. Delegates in this committee will tackle issues such as gender-based violence, access to education, and women’s representation in political and economic spheres. The committee offers a unique opportunity for delegates to advocate for policies that support the empowerment of women worldwide.</p>
             </div>
             <div class="committee">
                 <h3>HUNSC</h3>
-                <p>Description of the HUNSC Committee.</p>
+                <p>The Humanitarian and United Nations Security Council (HUNSC) is a critical committee that addresses international peace and security. Delegates will discuss humanitarian crises, conflict resolution, and security threats around the world. The HUNSC challenges delegates to navigate complex political landscapes, make difficult decisions, and mediate between opposing interests to ensure global peace.</p>
             </div>
             <div class="committee">
                 <h3>Legal</h3>
-                <p>Description of the Legal Committee.</p>
+                <p>The Legal Committee focuses on international law and global human rights issues. Delegates in this committee will analyze and resolve legal challenges that affect the international community, from war crimes to environmental laws. Legal experts are called upon to interpret and apply international law, creating solutions that hold states accountable for their actions and protect human dignity.</p>
             </div>
             <div class="committee">
                 <h3>ECOSOC</h3>
-                <p>Description of the ECOSOC Committee.</p>
+                <p>The Economic and Social Council (ECOSOC) addresses critical global issues such as poverty, economic inequality, and sustainable development. Delegates will work together to draft resolutions aimed at improving economic systems, fostering social progress, and ensuring environmental sustainability. This committee challenges delegates to think holistically about the intersection of economics, development, and human rights.</p>
             </div>
             <div class="committee">
                 <h3>UNICEF</h3>
-                <p>Description of the UNICEF Committee.</p>
+                <p>The United Nations Children’s Fund (UNICEF) works tirelessly to protect the rights of children worldwide. In this committee, delegates will focus on issues affecting children, such as access to education, child labor, healthcare, and protection from violence. Delegates will negotiate solutions to ensure that every child has the opportunity to grow up in a safe and nurturing environment.</p>
             </div>
             <div class="committee">
                 <h3>IOC</h3>
-                <p>Description of the IOC Committee.</p>
+                <p>The International Olympic Committee (IOC) is a prestigious and unique committee dedicated to overseeing the Olympic Games and promoting sportsmanship worldwide. Delegates in this committee will explore the intersection of politics, sports, and diplomacy, tackling issues related to hosting Olympic events, promoting fairness in sports, and using the Olympic platform to address global challenges such as racism and gender equality in sports.</p>
             </div>
         </section>
         <section id="apply">
@@ -88,40 +86,8 @@
         <p>&copy; 2025 JISMUN. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for Countdown Timer and Smooth Scroll -->
-    <script>
-        // Countdown Timer
-        const countDownDate = new Date("May 17, 2025 00:00:00").getTime();
-
-        const timer = setInterval(function() {
-            let now = new Date().getTime();
-            let distance = countDownDate - now;
-
-            let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            document.getElementById("timer").innerHTML = 
-                "<h2>Countdown to JISMUN'25:</h2>" +
-                "<p>" + days + "d " + hours + "h " + minutes + "m " + seconds + "s </p>";
-
-            if (distance < 0) {
-                clearInterval(timer);
-                document.getElementById("timer").innerHTML = "<h2>Event Started!</h2>";
-            }
-        }, 1000);
-
-        // Smooth Scroll Function
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
+    <!-- Link to the external JS file -->    
+    <script src="script.js"></script>
 </body>
 </html>
+
